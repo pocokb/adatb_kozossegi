@@ -1,5 +1,5 @@
 <?php
 include_once 'model/sqlconnect.php';
-$str = "Sikeres csatlakozás";
-include_once 'view/view_index.php';
+$str = "Sikeres csatlakozÃ¡s";
+include_once 'view/index.html';
 ?>
