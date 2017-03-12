@@ -1,1 +1,3 @@
-Neve: <?  ?>
+<?php	while ( $ember = oci_fetch_array($emberek, OCI_ASSOC + OCI_RETURN_NULLS)) {	?>
+		<p><?php echo $ember["NEV"]; ?> </p>    
+<?php	}	?>
