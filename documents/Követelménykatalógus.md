@@ -2,35 +2,35 @@
 
 ## Funkcionális követelmények:
 
-- Felhasználók regisztrálása, profilok létrehozása  
-- Bejelentkezés email címmel és jelszóval  
-- Profil adatok módosítása, profilkép beállítása  
+:+ Felhasználók regisztrálása, profilok létrehozása
+:+ Bejelentkezés email címmel és jelszóval  
+:+ Profil adatok módosítása, profilkép beállítása
 
-+ Fényképek feltöltése, megjegyzés hozzáfűzése
-+ Fényképalbumok létrehozása, albumjellemzők (fényképek száma, felhasznált tárhely)
+:- Üzenetek kiírása üzenőfalra (saját fal, más fala vagy egy klub fala)
+:- Saját üzenetek és egyéb kontentek törlése (visszavonás)
 
-- Ismerősök bejelölése, ismeretség visszaigazolása
-- Ismerősök ajánlása munkahely, vagy iskola alapján
+:+ Fényképek feltöltése, megjegyzés hozzáfűzése
+:+ Fényképalbumok létrehozása, albumjellemzők (fényképek száma, felhasznált tárhely)
 
-+ Privát üzenet küldése, fogadása
+:- Ismerősök bejelölése, ismeretség visszaigazolása
+:- Ismerősök ajánlása munkahely, vagy iskola alapján
 
-- Klubok alapítása
-- Klubok üzenőfalán levő posztok törölhetők a tulajdonos által
-- Klubtagok kirughatók tulajdonos által
-- Klubok tagjainak létszáma
-- Ismeretlen tagok ajánlása ismerősnek közös ismerősök alapján
-- Klubok ajánlása, ahol van közös ismerős
+:+ Privát üzenet küldése, fogadása
 
-+ Névnaposok, születésnaposok az adott hónapban
+:- Klubok alapítása
+:- Klubok üzenőfalán levő posztok törölhetők a tulajdonos által
+:- Klubtagok kirughatók tulajdonos által
+:- Klubok tagjainak létszáma
+:- Ismeretlen tagok ajánlása ismerősnek közös ismerősök alapján
+:- Klubok ajánlása, ahol van közös ismerős
 
-- Üzenetek kiírása üzenőfalra (saját fal, más fala vagy egy klub fala)
-- Saját üzenetek és egyéb kontentek törlése (visszavonás)
+:+ Névnaposok, születésnaposok az adott hónapban
 
-+ Meghívások kezelése, statisztika a meghívásokról (kinek hány olyan ismerőse van, akit ő hívott meg)
+:- Meghívások kezelése, statisztika a meghívásokról (kinek hány olyan ismerőse van, akit ő hívott meg)
 
-- Lájkolható tartalom: Üzenőfali üzenetek, kommentek, képek
+:+ Lájkolható tartalom: Üzenőfali üzenetek, kommentek, képek
 
-+ Értesítések megjelenítése (lájkoltak, commenteltek rád,üzenőfaladra írtak)
+:- Értesítések megjelenítése (lájkoltak, commenteltek rád,üzenőfaladra írtak)
 
 ## Nem funkcionális követelmények:
 
