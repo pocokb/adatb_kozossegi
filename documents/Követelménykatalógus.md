@@ -27,7 +27,7 @@
 : Klubok ajánlása, ahol van közös ismerős (megjelenítés oldalsávon)  
 
 : Meghívó küldése email címre
-: Regisztráláskor ellenőrzés, hogy meghívóval került-e be, ki hívta meg és ezt tárolni
+: Regisztráláskor ellenőrzés, hogy meghívóval került-e be, ki hívta meg és ezt tárolni  
 : Statisztika nyílvántartása a meghívásokról (kinek hány olyan ismerőse van, akit ő hívott meg)  
 
 : Kontent lájkolása: Üzenőfali üzenetek, kommentek, képek  
