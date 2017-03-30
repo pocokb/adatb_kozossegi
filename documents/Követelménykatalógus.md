@@ -6,7 +6,8 @@
 - Bejelentkezés email címmel és jelszóval
 - Profil adatok módosítása, profilkép beállítása
 
-&nbsp;
+
+
 + Fényképek feltöltése, megjegyzés hozzáfűzése
 + Fényképalbumok létrehozása, albumjellemzők (fényképek száma, felhasznált tárhely)
 
