@@ -13,8 +13,7 @@
 : Fényképalbumok létrehozása, albumjellemzők (fényképek száma, felhasznált tárhely)  
 : Profilkép beállítása  
 
-: Ismerős bejelölése
-: Ismeretség visszaigazolása  
+: Ismerős bejelölése, ismertség visszaigazolása  
 : Ismerősök ajánlása munkahely, vagy iskola alapján (megjelenítés oldalsávon)  
 
 : Privát üzenet küldése, fogadása  
