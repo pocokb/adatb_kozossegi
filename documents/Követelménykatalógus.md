@@ -1,2 +1,4 @@
-# cim
-a
+# Követelmények
+
+
+
