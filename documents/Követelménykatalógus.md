@@ -6,7 +6,6 @@
 - Bejelentkezés email címmel és jelszóval
 - Profil adatok módosítása, profilkép beállítása
 
-asd
 
 
 - Fényképek feltöltése, megjegyzés hozzáfűzése
