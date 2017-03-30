@@ -39,4 +39,6 @@
 
 ## Nem funkcionális követelmények:
 
-: 
+: Interaktív felület, oldalsávval, értesítésjelzőkkel  
+: Validált, biztonságos felhasználói inputok  
+: Jelszavak titkosított kezelése
