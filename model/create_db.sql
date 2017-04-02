@@ -134,3 +134,11 @@ CREATE TABLE Meghivo(
 	kuldo_email varchar2(40) not null REFERENCES Felhasznalo(email),
 	fogado_email varchar2(40) REFERENCES Felhasznalo(email)
 );
+
+INSERT INTO Felhasznalo VALUES ('pocokb@gmail.com','745a02903f2a8e15f6bb833830d064e6','Bencsik','Dávid',TO_DATE('1989-04-13','YYYY-MM-DD'),'férfi','MÁV','SZTE',CURRENT_TIMESTAMP(0), 2 );
+INSERT INTO Felhasznalo VALUES ('rozsa.regina.ta@gmail.com','dad3a37aa9d50688b5157698acfd7aee','Rózsa','Regina',TO_DATE('1992-02-22','YYYY-MM-DD'),'nő','Múzeumshop','MOME',CURRENT_TIMESTAMP(0), 0 );
+INSERT INTO Felhasznalo VALUES ('lali@gmail.com','0cc175b9c0f1b6a831c399e269772661','Csóró','Lali',TO_DATE('1967-06-11','YYYY-MM-DD'),'férfi','MÁV',Null,CURRENT_TIMESTAMP(0), 0 );
+INSERT INTO Felhasznalo VALUES ('ewin@vipmail.com','4124bc0a9335c27f086f24ba207a4912','Kovács','Éva',TO_DATE('1977-04-15','YYYY-MM-DD'),'nő','Fővárosi nagycirkusz','BME',CURRENT_TIMESTAMP(0), 0 );
+INSERT INTO Felhasznalo VALUES ('feri@gmail.com','47bce5c74f589f4867dbd57e9ca9f808','Nagy','Feró',TO_DATE('1995-04-22','YYYY-MM-DD'),'férfi','MÁV','SZTE',CURRENT_TIMESTAMP(0), 0 );
+INSERT INTO Felhasznalo VALUES ('karoly12@gmail.com','74b87337454200d4d33f80c4663dc5e5','Sós','Károly',TO_DATE('1911-04-27','YYYY-MM-DD'),'férfi','MÁV','MOME',CURRENT_TIMESTAMP(0), 0 );
+
