@@ -16,16 +16,11 @@ Kapcsolódás az adatbázishoz (windows 10-en tesztelve):
   - jelentkezz be és hagyd nyitva az ablakot. ahhoz hogy az adatbázishoz csatlakozni tudjon a weboldal ennek folyamat nyitva kell lennie.
 
 2. Webserver:
-  - Instant client letöltés, kicsomagolás. http://www.oracle.com/technetwork/topics/winsoft-085727.html
-  - PATH-hoz hozzáadni a mappát. (az sdk mappája nem kell)
+  - Instant client letöltés, kicsomagolás. http://www.oracle.com/technetwork/topics/winsoft-085727.html (a legfelső 32 bites basic kell)
+  - PATH-hoz hozzáadni a kicsomagolt mappát.
   - xampp-ot felrakni, figyelni ha az apache 32 bites akkor az instant client is az legyen.
-  - xampp/php/php.ini-ben kivenni a ;-t a pdo_oci és az oci dll-ek elől.
+  - xampp/php/php.ini-ben kivenni a ;-t a php_pdo_oci és az php_oci8_12c dll-ek elől.
   - xampp/php/php.ini-ben a UNIX-os include_path elé rakj ;-t és a windows-os elől vedd ki a ;-t, majd írd át a weboldal legkülső mappájára Pl: "C:\david\adatb_kozossegi"  
   - xampp/apache/conf/httpd.conf-ban a document root-ot és alatta a directory-t írd át a weboldalunk index.php fájljának mappájára. Pl: "C:\david\adatb_kozossegi\controller"
   - httpd-t újraindítani
   - KÉSZ!
-  
-
-
-httpd.conf document root
-php.ini include path
