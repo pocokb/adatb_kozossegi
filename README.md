@@ -4,6 +4,7 @@ Adatbázis alapú rendszerek 2016-17 Kötelező program : Közösségi oldal
 Deployment:
 Kapcsolódás az adatbázishoz (windows 10-en tesztelve):  
 1. Putty letöltés és beállítása:
+  - letöltés : http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
   - session: host: linux.inf.u-szeged.hu
   - ssh/tunnels:
     * source port: 1521
