@@ -3,11 +3,11 @@ Adatbázis alapú rendszerek 2016-17 Kötelező program : Közösségi oldal
 
 Deployment:
 Kapcsolódás az adatbázishoz:  
-1. Putty letöltés és beállítása:  
-  a. session: host: linux.inf.u-szeged.hu  
-  b. ssh/tunnels: source port: 1521  
-                  destination: orania.inf.u-szeged.hu:1521  
-                  Add 
+1. Putty letöltés és beállítása:
+  a. session: host: linux.inf.u-szeged.hu
+  b. ssh/tunnels: source port: 1521
+                  destination: orania.inf.u-szeged.hu:1521
+                  Add
   c. connection: seconds between keepalive: 60
   d. session: Saved sessions-hoz beirni egy nevet pl.: oracle
               Save
