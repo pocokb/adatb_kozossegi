@@ -1,2 +1,11 @@
-<h1> Hello! </h1>asd
-<p><?php echo $str ?></p>
+<?php include 'view/base.html' ?>
+
+<?php startblock('head') ?>
+   Userek
+<?php endblock() ?>
+
+<?php startblock('article') ?>
+<?php foreach($users as $user){ ?>
+<p> <?php echo $user['EMAIL'], ' ', $user['KERESZTNEV']; ?></p>
+<?php } ?>
+<?php endblock() ?>

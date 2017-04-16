@@ -1,5 +1,5 @@
 <?php
-include_once 'model/sqlconnect.php';
-$str = "Sikeres csatlakozás";
+require_once 'model/david.php';
+$users = getUsers();
 include_once 'view/index.html';
 ?>
