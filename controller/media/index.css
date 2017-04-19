@@ -1,0 +1,168 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 40px;
+	padding: 0 10px;
+}
+#left {
+	width: 160px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 474px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#right {
+	width: 220px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#left {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#right {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#left {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#right {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#right {
+		display: none;
+	}
+
+}
+
+
+#left {
+	background: #f8f8f8;
+}
+#right {
+	background: #f0efef;
+}
+header, #left, #middle, #right {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #left, #middle, #right, footer {
+	border: solid 1px #ccc;
+}
+
+
+
+#header{
+    background-color: #626E60;
+    color: white;
+}
+#logo{
+    float:left;
+    margin: auto 0;
+    font-size:30px;
+}
+#headerIcons{
+    float:right;
+}
+.headerIcon{
+    float:left;
+    margin:  5px 0 5px 15px;
+    background-repeat: no-repeat;   
+    background-size: auto;
+    width: 30px;
+    height: 30px;
+    opacity: .6;
+}
+
+#headerIconNotif{
+    background-image: url('notif.png');    
+}
+#headerIconMessages{
+    background-image: url('messages.png');    
+}
+#headerIconFriendships{
+    background-image: url('friendships.png');    
+}
+#headerIconExit{
+    background-image: url('exit.png');
+    margin-left: 0;
+}
+#headerVR{
+    float: left;
+    margin: 5px 5px;
+    border-left:1px solid #000;
+    height:30px
+}
+
