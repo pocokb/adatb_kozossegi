@@ -18,7 +18,10 @@ CREATE TABLE Felhasznalo(
 	munkahely varchar2(60),
 	iskola varchar2(60),
 	letrehozva timestamp(0) not null,
-	meghivott_ismerosok_szama number(10) not null
+	meghivott_ismerosok_szama number(10) default 0 not null,
+    uj_ertesitesek_szama number(10) default 0 not null,
+    uj_uzenetek_szama number(10) default 0 not null,
+    uj_jelolesek_szama number(10) default 0 not null
 );
 
 
@@ -65,7 +68,8 @@ CREATE TABLE Ismerosnek_jelol(
 
 CREATE TABLE Klub(
 	nev varchar2(60) not null PRIMARY KEY,
-	leiras varchar2(4000) not null
+	leiras varchar2(4000) not null,
+    tulajdonos_email varchar2(40) not null REFERENCES Felhasznalo(email)
 );
 
 
@@ -141,6 +145,15 @@ INSERT INTO Felhasznalo VALUES ('lali@gmail.com','0cc175b9c0f1b6a831c399e2697726
 INSERT INTO Felhasznalo VALUES ('ewin@vipmail.com','4124bc0a9335c27f086f24ba207a4912','Kovács','Éva',TO_DATE('1977-04-15','YYYY-MM-DD'),'nő','Fővárosi nagycirkusz','BME',CURRENT_TIMESTAMP(0), 0 );
 INSERT INTO Felhasznalo VALUES ('feri@gmail.com','47bce5c74f589f4867dbd57e9ca9f808','Nagy','Feró',TO_DATE('1995-04-22','YYYY-MM-DD'),'férfi','MÁV','SZTE',CURRENT_TIMESTAMP(0), 0 );
 INSERT INTO Felhasznalo VALUES ('karoly12@gmail.com','74b87337454200d4d33f80c4663dc5e5','Sós','Károly',TO_DATE('1911-04-27','YYYY-MM-DD'),'férfi','MÁV','MOME',CURRENT_TIMESTAMP(0), 0 );
+
+INSERT INTO Klub VALUES ('Macskás képek klubja','Itt a helye mindenkinek aki szereti a macskákat vagy szeret rajtuk nevetni. Bárki posztolhat macskás képeket de akár kutyásokat is a lényeg hogy vicces legyen!','pocokb@gmail.com');
+INSERT INTO Klub_tagja VALUES ('Macskás képek klubja','pocokb@gmail.com');
+INSERT INTO Klub_tagja VALUES ('Macskás képek klubja','lali@gmail.com');
+INSERT INTO Klub_tagja VALUES ('Macskás képek klubja','ewin@gmail.com');
+
+INSERT INTO Klub VALUES ('Szte csoport','Egyetemmel kapcsolatos kérdések, közlemények, határidők helye. Szívesen látunk mindenkit aki az egyetemre jár vagy járt. Szabályok: Nincsenek','lali@gmail.com');
+INSERT INTO Klub_tagja VALUES ('Szte csoport','lali@gmail.com');
+INSERT INTO Klub_tagja VALUES ('Szte csoport','feri@gmail.com');
 
 INSERT INTO Privat_uzenet VALUES (1,'Szia!',CURRENT_TIMESTAMP(0),'pocokb@gmail.com','lali@gmail.com');
 INSERT INTO Privat_uzenet VALUES (2,'Hi!',CURRENT_TIMESTAMP(0),'lali@gmail.com','pocokb@gmail.com');
