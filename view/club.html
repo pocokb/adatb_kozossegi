@@ -1,17 +1,18 @@
-<?php include 'view/3col.html' ?>
+<?php include 'view/3col.html' ;?>
 
 <?php startblock('middle') ?>
-    <h1><?php echo $klub['NEV']; ?></h1>
-    <h3>Klub tulajdonosa: <?php echo $klubTulaj; ?></h3>
-    <p><?php echo $klub['LEIRAS']; ?></p>
+    <h1><?php echo $club['NEV']; ?></h1>
+    <h3>Klub tulajdonosa: <?php echo $club['TULAJDONOS']; ?></h3>
+    <p><?php echo $club['LEIRAS']; ?></p>
+    <a href="editclub.php?name=<?php echo $club['NEV']; ?>"><p>Klub szerkesztése</p></a>
     <p>Üzenüfali posztok At full width all three columns will be displayed side by side. As the page is resized the third column will collapse under the first and second. At the smallest screen size all three columns will be stacked on top of one another.</p>
     <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 <?php endblock() ?>
 
 <?php startblock('right') ?>
     <h2>Klub tagjai:</h2>		
-    <?php foreach($klubTagok as $tag){ ?>
-    <p> <?php echo $tag['KERESZTNEV'], ' ', $tag['KERESZTNEV']; ?></p>
-    <?php } ?>
+    <?php foreach($clubMembers as $_member){ ?>
+    <p> <?php echo $_member['VEZETEKNEV'], ' ', $_member['KERESZTNEV']; ?></p>
+    <?php } unset($_member);?>
     <?php include 'view/ajanlasok.html'; ?>
 <?php endblock() ?>

@@ -25,11 +25,11 @@
             <li><a href="profiles.php?email=<?php echo $self['EMAIL']; ?>"><span>Értesítéseim</span></a></li>
             <li><a href="profiles.php?email=<?php echo $self['EMAIL']; ?>"><span>Ismerőseim</span></a></li>
             <li><a href="profiles.php?email=<?php echo $self['EMAIL']; ?>"><span>Albumaim</span></a></li>
-            <li><a href="profiles.php?email=<?php echo $self['EMAIL']; ?>"><span>Klubok</span></a></li>            
+            <li><a href="clubs.php"><span>Klubok</span></a></li>            
             <ul>
-                <?php foreach($clubsOfUser as $club){ ?>
-                <li><span><?php echo $club['NEV']; ?></span></li>
-                <?php } ?>
+                <?php foreach($clubsOfUser as $_club){ ?>
+                <li><a href="clubs.php?name=<?php echo $_club['NEV']; ?>"<span><?php echo $_club['NEV']; ?></span></a></li>
+                <?php } unset($_club);?>
                 
             </ul>
         </ul>

@@ -1,0 +1,12 @@
+<?php include 'view/3col.html' ;?>
+
+<?php startblock('middle') ?>
+
+    <h1>Klubok:</h1>
+    <ul>
+        <?php foreach($clubs as $_club){ ?>
+            <li><a href="clubs.php?name=<?php echo $_club['NEV']; ?>"<span><?php echo $_club['NEV']; ?></span></a></li>
+        <?php } unset($_club);?>              
+    </ul>
+    <a href="clubs.php?action=new"><h2>Új klub alapítása:</h2></a>
+<?php endblock() ?>

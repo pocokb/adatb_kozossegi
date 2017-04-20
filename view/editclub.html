@@ -1,0 +1,25 @@
+<?php include 'view/3col.html' ;?>
+
+<?php startblock('middle') ?>
+    <h1><?php echo $club['NEV']; ?></h1>
+    <h3>Klub tulajdonosa: <?php echo $club['TULAJDONOS']; ?></h3>
+    <form action="editclub.php?name=<?php echo $club['NEV'];?>" method="post">        
+    <textarea name="leiras" id="leiras" rows="4" cols="60"><?php echo $club['LEIRAS']; ?></textarea>
+    <input type="submit" value="Módosít" />
+    <input type="submit" value="Klub törlése" />
+    <h3>Posztok:</h3>
+    <?php foreach($clubPosts as $_poszt){ ?>
+    <p> <?php echo $_poszt['SZOVEG']; ?><input type="submit" value="Poszt törlése" /></p>
+    <?php } unset($_poszt);?>    
+    </form>
+<?php endblock() ?>
+
+<?php startblock('right') ?>
+    <h2>Klub tagjai:</h2>
+    <form action="editclub.php?name=<?php echo $club['NEV'];?>" method="post">
+    <?php foreach($clubMembers as $_member){ ?>
+    <p> <?php echo $_member['VEZETEKNEV'], ' ', $_member['KERESZTNEV']; ?><input type="submit" value="Tag kirúgása" /></p>
+    <?php } unset($_member);?>
+    <?php include 'view/ajanlasok.html'; ?>
+    </form>
+<?php endblock() ?>

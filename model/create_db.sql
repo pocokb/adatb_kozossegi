@@ -101,7 +101,7 @@ CREATE TABLE Uzenofali_uzenet(
 	szoveg varchar2(400) not null,
 	letrehozva timestamp(0) not null,
 	kuldo_email varchar2(40) not null REFERENCES Felhasznalo(email),
-	fogado_email varchar2(40) not null REFERENCES Felhasznalo(email)
+	fogado_email varchar2(40) not null
 );
 CREATE SEQUENCE uzenofali_uzenet_seq START WITH 1;
 CREATE OR REPLACE TRIGGER uzenofali_uzenet_bir 
@@ -154,6 +154,8 @@ INSERT INTO Klub_tagja VALUES ('Macskás képek klubja','ewin@vipmail.com');
 INSERT INTO Klub VALUES ('Szte csoport','Egyetemmel kapcsolatos kérdések, közlemények, határidők helye. Szívesen látunk mindenkit aki az egyetemre jár vagy járt. Szabályok: Nincsenek','lali@gmail.com');
 INSERT INTO Klub_tagja VALUES ('Szte csoport','lali@gmail.com');
 INSERT INTO Klub_tagja VALUES ('Szte csoport','feri@gmail.com');
+
+
 
 INSERT INTO Privat_uzenet VALUES (1,'Szia!',CURRENT_TIMESTAMP(0),'pocokb@gmail.com','lali@gmail.com');
 INSERT INTO Privat_uzenet VALUES (2,'Hi!',CURRENT_TIMESTAMP(0),'lali@gmail.com','pocokb@gmail.com');
@@ -237,6 +239,12 @@ INSERT INTO Uzenofali_uzenet VALUES (27,'Milyen ly vagy j?',CURRENT_TIMESTAMP(0)
 INSERT INTO Uzenofali_uzenet VALUES (28,'Na az jó lesz!',CURRENT_TIMESTAMP(0),'feri@gmail.com','feri@gmail.com');
 INSERT INTO Uzenofali_uzenet VALUES (29,'YOLO',CURRENT_TIMESTAMP(0),'feri@gmail.com','feri@gmail.com');
 INSERT INTO Uzenofali_uzenet VALUES (30,'Ma inkább ne',CURRENT_TIMESTAMP(0),'feri@gmail.com','feri@gmail.com');
+
+INSERT INTO Uzenofali_uzenet VALUES (31,'Jók ezek a macskák!',CURRENT_TIMESTAMP(0),'lali@gmail.com','Macskás képek klubja');
+INSERT INTO Uzenofali_uzenet VALUES (32,'Nézzétek ezt a macskát!',CURRENT_TIMESTAMP(0),'pocokb@gmail.com','Macskás képek klubja');
+INSERT INTO Uzenofali_uzenet VALUES (33,'Tudtátok hogy a sziámi macska egyiptomi eredetű?',CURRENT_TIMESTAMP(0),'lali@gmail.com','Macskás képek klubja');
+INSERT INTO Uzenofali_uzenet VALUES (34,'Jövőhéten tavaszi szünet!',CURRENT_TIMESTAMP(0),'lali@gmail.com','Szte csoport');
+INSERT INTO Uzenofali_uzenet VALUES (35,'Figyelem! Vasárnapig lehet még bnyújtani a bérlet kérelmeket!',CURRENT_TIMESTAMP(0),'lali@gmail.com','Szte csoport');
 
 INSERT INTO Komment VALUES (1,'Boldogot!',CURRENT_TIMESTAMP(0),'lali@gmail.com','uzenet',12,Null);
 INSERT INTO Komment VALUES (2,'Köszi!',CURRENT_TIMESTAMP(0),'ewin@vipmail.com','uzenet',12,Null);
