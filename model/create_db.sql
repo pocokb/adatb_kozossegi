@@ -17,12 +17,28 @@ CREATE TABLE Felhasznalo(
 	nem varchar2(20),
 	munkahely varchar2(60),
 	iskola varchar2(60),
-	letrehozva timestamp(0) not null,
+	letrehozva timestamp(0),
 	meghivott_ismerosok_szama number(10) default 0 not null,
     uj_ertesitesek_szama number(10) default 0 not null,
     uj_uzenetek_szama number(10) default 0 not null,
     uj_jelolesek_szama number(10) default 0 not null
 );
+
+CREATE TRIGGER Felhasznalo 
+  AFTER INSERT ON Privat_uzenet 
+  FOR EACH ROW
+BEGIN
+  :new.id := CURRENT_TIMESTAMP;
+END;
+/
+
+CREATE TRIGGER FelhasznaloCsatlakozott
+  BEFORE INSERT ON Felhasznalo
+  FOR EACH ROW
+BEGIN
+  :new.letrehozva := CURRENT_TIMESTAMP;
+END;
+/
 
 
 CREATE TABLE Album(
@@ -101,7 +117,8 @@ CREATE TABLE Uzenofali_uzenet(
 	szoveg varchar2(400) not null,
 	letrehozva timestamp(0) not null,
 	kuldo_email varchar2(40) not null REFERENCES Felhasznalo(email),
-	fogado_email varchar2(40) not null
+	fogado_email varchar2(40) not null,
+	fenykep_link varchar2(60) REFERENCES Fenykep(link)
 );
 CREATE SEQUENCE uzenofali_uzenet_seq START WITH 1;
 CREATE OR REPLACE TRIGGER uzenofali_uzenet_bir 

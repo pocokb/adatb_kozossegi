@@ -11,5 +11,5 @@ $tns = "
   
 $username = 'h973833';
 $password = 'kozos123';
-$conn = oci_connect($username, $password, $tns,'UTF8') or die();
+$conn = oci_connect('SYSTEM', 'asd','localhost/xe','UTF8') or die();
 ?>
